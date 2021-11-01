@@ -19,6 +19,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
+
+
         <include
             layout="@layout/main_list_menu"
             android:layout_width="match_parent"
@@ -27,6 +30,7 @@
         </include>
 
         <LinearLayout
+            android:id="@+id/console_Num"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
@@ -68,9 +72,19 @@
             layout="@layout/main_list_order"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
         </include>
 
     </androidx.core.widget.NestedScrollView>
 
+    <Button
+        android:id="@+id/confirm_order_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Confirm Order"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
 </androidx.constraintlayout.widget.ConstraintLayout>
